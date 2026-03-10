@@ -1,24 +1,23 @@
-'use client'
+"use client";
 
-import Link from 'next/link'
-import { useState } from 'react'
-import { NavLink } from '@/types'
+import Link from "next/link";
+import { useState } from "react";
+import { NavLink } from "@/types";
 
 const navLinks: NavLink[] = [
-  { label: 'Home', href: '/' },
-  { label: 'About', href: '/about' },
-  { label: 'Practice Areas', href: '/practice-areas' },
-  { label: 'Attorneys', href: '/attorneys' },
-  { label: 'Contact', href: '/contact' },
-]
+  { label: "Home", href: "/" },
+  { label: "About", href: "/about" },
+  { label: "Practice Areas", href: "/practice-areas" },
+  { label: "Attorneys", href: "/attorneys" },
+  { label: "Contact", href: "/contact" },
+];
 
 export default function Navbar() {
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <nav className="bg-navy px-6 py-4 sticky top-0 z-50 shadow-md">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
-
         {/* Logo */}
         <Link href="/" className="text-gold text-2xl font-bold tracking-wide">
           VeritasLaw
@@ -53,11 +52,16 @@ export default function Navbar() {
           className="md:hidden text-white focus:outline-none"
           onClick={() => setIsOpen(!isOpen)}
         >
-          <div className={`w-6 h-0.5 bg-white mb-1.5 transition-all ${isOpen ? 'rotate-45 translate-y-2' : ''}`} />
-          <div className={`w-6 h-0.5 bg-white mb-1.5 transition-all ${isOpen ? 'opacity-0' : ''}`} />
-          <div className={`w-6 h-0.5 bg-white transition-all ${isOpen ? '-rotate-45 -translate-y-2' : ''}`} />
+          <div
+            className={`w-6 h-0.5 bg-white mb-1.5 transition-all ${isOpen ? "rotate-45 translate-y-2" : ""}`}
+          />
+          <div
+            className={`w-6 h-0.5 bg-white mb-1.5 transition-all ${isOpen ? "opacity-0" : ""}`}
+          />
+          <div
+            className={`w-6 h-0.5 bg-white transition-all ${isOpen ? "-rotate-45 -translate-y-2" : ""}`}
+          />
         </button>
-
       </div>
 
       {/* Mobile Menu */}
@@ -83,5 +87,5 @@ export default function Navbar() {
         </div>
       )}
     </nav>
-  )
+  );
 }
