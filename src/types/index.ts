@@ -11,3 +11,8 @@ export type PracticeArea = {
   description: string
   icon: string
 }
+
+export type NavLink = {
+  label: string
+  href: string
+}
