@@ -1,18 +1,19 @@
-// types/index.ts
-export type Attorney = {
-  name: string
-  title: string
-  specialization: string
-  image: string
-}
+export type NavLink = {
+  label: string;
+  href: string;
+};
 
 export type PracticeArea = {
-  title: string
-  description: string
-  icon: string
-}
+  icon: string;
+  title: string;
+  description: string;
+  services: string[];
+};
 
-export type NavLink = {
-  label: string
-  href: string
-}
+export type Attorney = {
+  name: string;
+  title: string;
+  specialization: string;
+  image: string;
+  initials: string;
+};
