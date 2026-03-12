@@ -2,7 +2,7 @@
 
 A modern, fully responsive law firm website built with Next.js, TypeScript, and Tailwind CSS. Designed to establish trust, showcase legal expertise, and convert visitors into clients.
 
-🔗 **Live Site:** https://veritas-law-blush.vercel.app/
+🔗 **Live Site:** [veritas-law-blush.vercel.app](https://veritas-law-blush.vercel.app)
 
 ---
 
@@ -43,19 +43,12 @@ A modern, fully responsive law firm website built with Next.js, TypeScript, and 
 
 ---
 
-## Getting Started
-
-### Prerequisites
-
-- Node.js 18+
-- npm
-
-### Installation
+## Installation
 
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/veritas-law.git
+git clone https://github.com/mihahaj-ul/veritas-law.git
 ```
 
 2. Navigate into the project:
